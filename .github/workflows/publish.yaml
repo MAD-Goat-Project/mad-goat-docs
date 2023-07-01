@@ -20,3 +20,8 @@ jobs:
 
       - name: 🔨 install dependencies & build site
         uses: actions/jekyll-build-pages@v1
+
+  build-and-push-image:
+    uses: MAD-Goat-Project/github-actions-workflows/.github/workflows/publish-docker.yml@main
+    with:
+      secrets: inherit
