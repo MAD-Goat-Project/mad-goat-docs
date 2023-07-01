@@ -19,6 +19,4 @@ jobs:
           ruby-version: 3.2.0
 
       - name: 🔨 install dependencies & build site
-        uses: limjh16/jekyll-action-ts@v2
-        with:
-          enable_cache: true
+        uses: actions/jekyll-build-pages@v1
