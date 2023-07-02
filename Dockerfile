@@ -1,8 +1,10 @@
-FROM jekyll/jekyll:3.8 as builder
+FROM jekyll/jekyll:4.0.1 as builder
 
 WORKDIR /app
 
 COPY . .
+
+RUN mkdir .jekyll-cache _site
 
 RUN jekyll build
 
