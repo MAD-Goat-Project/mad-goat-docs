@@ -25,5 +25,4 @@ jobs:
   build-and-push-image:
     needs: jekyll
     uses: MAD-Goat-Project/github-actions-workflows/.github/workflows/publish-docker.yml@main
-    with:
-      secrets: inherit
+    secrets: inherit
