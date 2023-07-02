@@ -6,6 +6,7 @@ on:
       - main
 
   workflow_dispatch:
+
 jobs:
   jekyll:
     runs-on: ubuntu-latest
@@ -22,6 +23,7 @@ jobs:
         uses: actions/jekyll-build-pages@v1
 
   build-and-push-image:
+    needs: jekyll
     uses: MAD-Goat-Project/github-actions-workflows/.github/workflows/publish-docker.yml@main
     with:
       secrets: inherit
