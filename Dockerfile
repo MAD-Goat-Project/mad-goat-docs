@@ -1,4 +1,4 @@
-FROM jekyll/jekyll:4.0 as builder
+FROM jekyll/jekyll:3.8 as builder
 
 WORKDIR /app
 
