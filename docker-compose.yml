@@ -5,7 +5,7 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "4000:80"
+      - "4001:80"
     platform: linux/amd64
     deploy:
       resources:
