@@ -23,8 +23,5 @@ COPY --from=builder /app/_site/ /usr/share/nginx/html
 # Expose port 80 to allow incoming traffic
 EXPOSE 80
 
-# Healthcheck to verify the container's health
-HEALTHCHECK CMD curl --fail http://localhost:80 || exit 1
-
 # Start Nginx when the container launches
 CMD ["nginx", "-g", "daemon off;"]
