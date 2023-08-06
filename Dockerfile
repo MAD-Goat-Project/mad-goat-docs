@@ -9,7 +9,7 @@ RUN mkdir .jekyll-cache _site
 RUN jekyll build
 
 
-FROM ghcr.io/mad-goat-project/nginix:1.25.1 as production
+FROM ghcr.io/mad-goat-project/nginix:1.25.2 as production
 
 # Remove the default Nginx configuration file
 RUN rm /etc/nginx/conf.d/default.conf
