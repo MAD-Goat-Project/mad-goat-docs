@@ -12,7 +12,7 @@ RUN jekyll build
 FROM ghcr.io/mad-goat-project/nginix:1.25.3 as production
 
 # Remove the default Nginx configuration file
-RUN rm /etc/nginx/conf.d/default.conf
+#RUN rm -f /etc/nginx/conf.d/default.conf
 
 # Copy the custom Nginx configuration file
 COPY nginx.conf /etc/nginx/conf.d/
