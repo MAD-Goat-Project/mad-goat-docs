@@ -18,7 +18,6 @@ There's an Edit me button on each page on this theme. This button allows collabo
 
 Here's the code for that button on the page.html layout for GitHub:
 
-
 ```
 {% raw %}{% if site.github_editme_path %}
 
@@ -28,7 +27,6 @@ Here's the code for that button on the page.html layout for GitHub:
 ```
 
 and here for GitLab:
-
 
 ```
 {% raw %}{% if site.gitlab_editme_path %}
@@ -50,7 +48,6 @@ If you don't want to allow anyone to commit to your Github branch, don't add the
 
 {% include note.html content="When you process pull requests, you have to accept everything or nothing. You can't pick and choose which changes you'll merge. Therefore you'll probably want to edit the branch you're planning to merge or ask the contributor to make some changes to the fork before processing the pull request." %}
 
-
 ## Workflow
 
 Users will make edits in your "reviews" branch (or whatever you want to call it). You can then commit those edits as you make updates.
@@ -63,6 +60,6 @@ Note that if you're making updates online, those updates will be out of sync wit
 
 ## Prose.io
 
- Prose.io is an overlay on Github that would allow people to make comments in an easier interface. If you simply go to [prose.io](http://prose.io), it asks to authorize your Github account, and so it will read files directly from Github but in the Prose.io interface.
+Prose.io is an overlay on Github that would allow people to make comments in an easier interface. If you simply go to [prose.io](http://prose.io), it asks to authorize your Github account, and so it will read files directly from Github but in the Prose.io interface.
 
- {% include links.html %}
+{% include links.html %}
