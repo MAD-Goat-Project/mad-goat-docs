@@ -4,6 +4,10 @@ WORKDIR /app
 
 COPY . .
 
+#Delete the Gemfile and Gemfile.lock file
+RUN rm Gemfile
+RUN rm Gemfile.lock
+
 RUN mkdir .jekyll-cache _site
 
 RUN jekyll build
